@@ -25,5 +25,10 @@ and create a `.env` file with 5 variables:
 `RESEND_API_KEY`= Get from Resend.com for sending emails.
 
 
+
+and we are good to go.
+Run `yarn dev` to run it.
+
+
 **NOTE :** resend only allows mails to be sent from custom domains, so here with resend's default mail, I can only send mails to my personal account. Setup your resend dashboard when deploying for production. 
 
