@@ -8,10 +8,10 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "digitalhippo-production.up.railway.app",
+        hostname: "digitalhippotest.up.railway.app",
       },
     ],
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
