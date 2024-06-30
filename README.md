@@ -1,34 +1,47 @@
 # DigitalHippo - A Modern Fullstack E-Commerce Marketplace for Digital Products
 
-Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
+DigitalHippo is built using Next.js 14 with App Router, tRPC, TypeScript, Payload, and TailwindCSS.
 
-## Getting started
+## Getting Started
 
-To get started with this project, run
+### Clone the Repository
 
 ```bash
-  git clone https://github.com/amanmodiii/Digital-Hippo.git
+git clone https://github.com/amanmodiii/Digital-Hippo.git
+cd Digital-Hippo
 ```
 
-and create a `.env` file with 5 variables:
+## Set Up Environment Variables
 
-`NEXT_PUBLIC_SERVER_URL`= port number or url
+### Create a .env file in the root directory of your project with the following variables:
 
-`PAYLOAD_SECRET`= anything which is secure
-
-`MONGODB_URL`=  Database link
-
-`STRIPE_SECRET_KEY`= Get from stripe for accepting payments
-
-`STRIPE_WEBHOOK_SECRET`= Get from Stripe->webhooks
-
-`RESEND_API_KEY`= Get from Resend.com for sending emails.
-
+```bash
+NEXT_PUBLIC_SERVER_URL=your_server_url_or_port
+PAYLOAD_SECRET=your_secure_payload_secret
+MONGODB_URL=your_mongodb_database_link
+STRIPE_SECRET_KEY=your_stripe_secret_key
+STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+RESEND_API_KEY=your_resend_api_key
+```
 
 
-and we are good to go.
-Run `yarn dev` to run it.
+## Start the Development Server
 
+```bash
+yarn install
+yarn dev
+```
+And you are good to go!
 
-**NOTE :** resend only allows mails to be sent from custom domains, so here with resend's default mail, I can only send mails to my personal account. Setup your resend dashboard when deploying for production. 
+<br>
+<br>
 
+## Notes
+
+- **Stripe Setup:** Obtain your STRIPE_SECRET_KEY and STRIPE_WEBHOOK_SECRET from your Stripe account.
+
+- **Resend Setup:** Obtain your RESEND_API_KEY from Resend.com for email sending.
+
+<br>
+
+*Make sure to configure Resend for your production environment to send emails from custom domains.*
