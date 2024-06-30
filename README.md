@@ -13,15 +13,15 @@ To get started with this project, run
 and create a `.env` file with 5 variables:
 NEXT_PUBLIC_SERVER_URL=http://localhost:3000
 
-# Any value works here, should be somewhat secure
+### Any value works here, should be somewhat secure
 PAYLOAD_SECRET=
 
-# Database - either MongoDB or Postgres work
+### Database - either MongoDB or Postgres work
 MONGODB_URL=
 
-# Payments
+### Payments
 STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 
-# Email
+### Email
 RESEND_API_KEY=
